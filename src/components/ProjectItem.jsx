@@ -1,22 +1,32 @@
-import React from 'react';
-
-const ProjectItem = ({ img, title }) => {
+/* eslint-disable react/prop-types */
+const ProjectItem = ({ img, title, description }) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]'>
-      <img src={img} alt='/' className='rounded-xl group-hover:opacity-10' />
-      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl font-bold text-white tracking-wider text-center'>
-          {title}
-        </h3>
-        <p className='pb-4 pt-2 text-white text-center'>React JS</p>
-        <a href='/'>
-          <p className='text-center p-3 rounded-ld bg-white text-gray-700 font-bold cursor-pointer text-lg'>
-            More Info
-          </p>
-        </a>
+    <div className="w-80 h-96 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-center justify-between gap-4 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-all duration-300">
+      {/* Imagen del proyecto */}
+      <div className="relative w-full h-48 bg-gray-700 rounded-2xl overflow-hidden">
+        <img
+          src={img}
+          alt={`${title} Preview`}
+          className="w-full h-full object-cover rounded-2xl transition-transform duration-300 ease-in-out group-hover:scale-105"
+        />
       </div>
+
+      {/* Información del proyecto */}
+      <div className="w-full text-center">
+        <p className="text-lg font-extrabold mb-2">{title}</p>
+        <p className="text-sm text-neutral-400">
+          {description}
+        </p>
+      </div>
+
+      {/* Botón "See more" */}
+      <button className="bg-sky-700 font-bold text-sm text-white p-2 px-6 rounded-xl hover:bg-sky-500 transition-all duration-300">
+        Ver mas
+      </button>
     </div>
   );
 };
 
 export default ProjectItem;
+
+
