@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div id="contact" className="max-w-[1040px] mx-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-8">
+      <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-5">
         Contáctame
       </h1>
       <form

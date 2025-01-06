@@ -2,7 +2,7 @@
 const WorkItem = ({ year, title, duration, details_one, details_two, details_three, company }) => {
   return (
     <ol className='flex flex-col md:flex-row relative border-l border-stone-200'>
-      <li className='mb-8 ml-8'>
+      <li className='mb-5 ml-5'>
         <div className='absolute w-2 h-2 bg-stone-200 rounded-full mt-1.5 -left-1.5 border-white' />
         <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-sm'> 
           <span className='inline-block px-2 py-0.5 font-semibold text-white bg-[#001b5e] rounded-md'>

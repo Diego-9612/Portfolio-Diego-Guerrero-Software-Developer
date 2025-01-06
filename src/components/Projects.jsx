@@ -17,7 +17,7 @@ const Projects = () => {
         <ProjectItem img={driveImg} title='Drive App' description='gshhsahahs' />
         <ProjectItem img={propertyImg} title='Property App' description='gshhsahahs'/>
         <ProjectItem img={beachesImg} title='Beaches App' description='gshhsahahs' />
-        <ProjectItem img={bestEatsImg} title='BestEats App' description='gshhsahahs' />
+        <ProjectItem img={bestEatsImg} title='BestEats App' description='gshhs' />
       </div>
     </div>
   );
